@@ -1,5 +1,3 @@
-# EEG-digital-twin-asd-therapy
-
 # EEG-Driven Digital Twin Models for AI and VR-Based Language Therapy in Children with Autism Spectrum Disorder
 
 ## Abstract
@@ -53,40 +51,30 @@ The system demonstrated significant improvements in engagement prediction while 
 git clone https://github.com/yourusername/eeg-digital-twin-asd-therapy.git
 cd eeg-digital-twin-asd-therapy
 pip install -r requirements.txt
+python eeg_digital_twin.py
 ```
 
 ## Usage
 
 ### Basic Usage
 
-Run the main simulation with demonstration data:
+Run the main simulation (uses simulated ASD EEG patterns automatically):
 
 ```bash
-python src/main.py --demo
+python eeg_digital_twin.py
 ```
 
-### Advanced Usage
+The system will automatically:
+- Generate simulated ASD EEG patterns for demonstration
+- Train the digital twin model
+- Run the neuroadaptive therapy simulation
+- Display real-time VR interface (press ESC to quit)
 
-Run with custom EEG files:
+### System Requirements
 
-```bash
-python src/main.py --eeg-files data/your_eeg_file.csv --epochs 100
-```
-
-Run without VR interface (headless mode):
-
-```bash
-python src/main.py --demo --no-vr
-```
-
-### Configuration
-
-The system can be configured through YAML files in the `config/` directory. Key parameters include:
-
-- EEG processing settings (sampling rate, frequency bands)
-- Digital twin model architecture
-- Therapy action weights
-- VR interface parameters
+- **Pygame Window**: The system opens a pygame window for VR visualization
+- **Training Time**: Initial model training takes approximately 5-10 minutes
+- **Demo Duration**: Full simulation runs for several minutes with real-time feedback
 
 ## Dataset
 
@@ -151,37 +139,24 @@ The virtual reality environment adapts in real-time:
 
 ```
 eeg-digital-twin-asd-therapy/
-├── src/
-│   ├── main.py                 # Main application entry point
-│   ├── data/                   # EEG data loading and preprocessing
-│   ├── models/                 # Digital twin and RL models
-│   ├── vr_interface/           # VR therapy interface
-│   └── utils/                  # Configuration and utilities
-├── data/
-│   ├── sample_data/            # Demonstration datasets
-│   └── processed/              # Processed EEG features
-├── notebooks/                  # Jupyter analysis notebooks
-├── tests/                      # Unit tests
-├── docs/                       # Documentation
-├── results/                    # Experimental results
-├── scripts/                    # Utility scripts
-└── conference/                 # MODSIM 2025 materials
+├── eeg_digital_twin.py        # Main application (contains all code)
+├── README.md                  # Project documentation
+├── LICENSE                    # MIT license
+├── requirements.txt           # Python dependencies
+├── setup.py                   # Package installation
+└── .gitignore                 # Git ignore rules
 ```
 
 ## Testing
 
-Run the test suite:
+The system includes built-in testing functionality:
 
 ```bash
-python -m pytest tests/
+# The pygame test runs automatically when you start the program
+python eeg_digital_twin.py
 ```
 
-Run specific test categories:
-
-```bash
-python -m pytest tests/test_models.py -v
-python -m pytest tests/test_data_processing.py -v
-```
+The system will automatically test pygame functionality before running the main simulation.
 
 ## Contributing
 
