@@ -13,6 +13,7 @@ import asyncio
 import numpy as np
 import platform
 from sklearn.model_selection import train_test_split
+import os
 
 # Import modular components
 from data.eeg_processing import load_real_eeg_features, simulate_asd_eeg_patterns
