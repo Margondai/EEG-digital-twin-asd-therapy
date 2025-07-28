@@ -30,11 +30,7 @@ async def main():
     print("Loading real EEG data and training neuroadaptive system...")
 
     # Load multiple EEG files for robust training
-    edf_files = [
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex07.csv",
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex08.csv",
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex09.csv"
-    ]
+    edf_files = []
 
     eeg_data_list = []
     feature_names = None
@@ -853,11 +849,7 @@ async def main():
     print("Loading real EEG data and training neuroadaptive system...")
 
     # Load multiple EEG files for robust training
-    edf_files = [
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex07.csv",
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex08.csv",
-        "/Users/ancuta/it/Sara/data/tuh_eeg/physionet.org/files/eeg-biometric/1.0.0/filtered_data/subject01/s01_ex09.csv"
-    ]
+    edf_files = []
 
     eeg_data_list = []
     feature_names = None
