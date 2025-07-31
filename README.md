@@ -1,5 +1,9 @@
 # EEG-Driven Digital Twin Models for AI and VR-Based Language Therapy in Children with Autism Spectrum Disorder
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
+[![Conference](https://img.shields.io/badge/Conference-MODSIM%20World%202025-green.svg)](https://modsimworld.org/)
+
 ## Abstract
 
 This project develops an innovative EEG-driven digital twin framework that simulates cognitive responses during language tasks for children with Autism Spectrum Disorder (ASD). The system integrates real-time brain activity monitoring with artificial intelligence decision-making and virtual reality therapy delivery to provide personalized, neuroadaptive interventions that adjust content based on engagement, anxiety, attention, and processing efficiency.
